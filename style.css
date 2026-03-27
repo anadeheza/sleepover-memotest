@@ -71,6 +71,70 @@ body {
     font-size: 3rem;
 }
 
+.card.shake {
+  animation: shake 0.3s ease-in-out;
+  border-radius: 1rem; 
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Escondido por defecto */
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.win-message {
+    background: white;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 0 20px pink;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.win-message h1 {
+    font-family: 'Satisfy', cursive;
+    color: pink;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.win-message button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border: none;
+    background: pink;
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.win-message button:hover {
+    background: #ffb6c1;
+    transform: scale(1.1);
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotateY(180deg); } /* Mantenemos rotateY(180deg) para que no se de vuelta la carta */
+  50% { transform: translateX(5px) rotateY(180deg); }
+  75% { transform: translateX(-5px) rotateY(180deg); }
+  100% { transform: translateX(0) rotateY(180deg); }
+}
+
 /* Para Celular */
 @media (max-width: 768px) {
     body {
@@ -107,6 +171,14 @@ body {
 
     .card .front {
         font-size: 3rem;
+    }
+    
+    .win-message { 
+        width: 80%; 
+    }
+    
+    .win-message h1 { 
+        font-size: 2.5rem; 
     }
 }
 
