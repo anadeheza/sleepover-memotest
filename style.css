@@ -163,7 +163,7 @@ body {
         grid-template-columns: repeat(4, 1fr); 
         gap: 1px;
         padding: 5px;
-        width: 95%; 
+        width: 100%; 
     }
 
     .card {
