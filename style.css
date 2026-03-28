@@ -136,7 +136,7 @@ body {
 }
 
 /* Para Celular */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     body {
         overflow-y: auto; 
     }
@@ -144,23 +144,26 @@ body {
     #wrapper {
         height: auto;
         min-height: 100vh;
-        padding: 20px 0;
+        padding: 10px 0;
+        justify-content: flex-start; 
     }
 
     #stats {
-        font-size: 1.8rem; 
+        margin-top: 20px; 
+        font-size: 2.5rem; 
         position: relative;
         width: 100%;
-        padding: 10px 0;
+        padding: 5px 0;
     }
 
     #game {
-        margin-top: 20px;
+        margin-top: 10px; 
         height: auto;
         max-height: none;
-        grid-template-columns: repeat(3, 1fr); 
-        gap: 10px;
-        padding: 10px;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 1px;
+        padding: 5px;
+        width: 95%; 
     }
 
     .card {
@@ -193,3 +196,4 @@ body {
         height: 100px;
     }
 }
+
