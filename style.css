@@ -185,15 +185,3 @@ body {
     }
 }
 
-/*Para celulares mas chicos*/
-@media (max-width: 380px) {
-    #game {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .card {
-        width: 70px;
-        height: 100px;
-    }
-}
-
