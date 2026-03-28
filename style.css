@@ -136,7 +136,7 @@ body {
 }
 
 /* Para Celular */
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
     body {
         overflow-y: auto; 
     }
