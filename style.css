@@ -10,10 +10,12 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    text-align: center;
 }
 
 #game {
+    order: 3;
     margin-top: 100px;
     height: 100vh;
     max-height: 700px;
@@ -62,6 +64,8 @@ body {
 }
 
 #stats {
+    order: 1; 
+    position: relative;
     font-family: 'Satisfy';
     color: white;
     position: absolute;
@@ -69,6 +73,7 @@ body {
     text-align: center;
     width: calc(100% - 2rem);
     font-size: 3rem;
+    width: 100%;
 }
 
 .card.shake {
@@ -120,6 +125,30 @@ body {
 .win-message button:hover {
     background: #ffb6c1;
     transform: scale(1.1);
+}
+
+#restart {
+    order: 2; 
+    margin: 60px auto;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: pink;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    z-index: 10;
+    transition: transform 0.2s;
+}
+
+#restart:hover {
+    background: #ffb6c1;
+    transform: scale(1.05);
+}
+
+#restart:active {
+    transform: scale(0.95);
 }
 
 @keyframes popIn {
@@ -182,6 +211,11 @@ body {
     
     .win-message h1 { 
         font-size: 2.5rem; 
+    }
+
+    #restart {
+        margin-top: 10px;
+        font-size: 1rem;
     }
 }
 
