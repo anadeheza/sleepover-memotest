@@ -15,7 +15,7 @@ body {
 }
 
 #game {
-    order: 3;
+    order: 2;
     margin-top: 100px;
     height: 100vh;
     max-height: 700px;
@@ -127,29 +127,6 @@ body {
     transform: scale(1.1);
 }
 
-#restart {
-    order: 2; 
-    margin: 60px auto;
-    padding: 5px 20px;
-    font-size: 1.2rem;
-    border: none;
-    background-color: pink;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    z-index: 10;
-    transition: transform 0.2s;
-}
-
-#restart:hover {
-    background: #ffb6c1;
-    transform: scale(1.05);
-}
-
-#restart:active {
-    transform: scale(0.95);
-}
 
 @keyframes popIn {
     0% { transform: scale(0); opacity: 0; }
