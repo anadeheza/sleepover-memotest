@@ -15,7 +15,6 @@ body {
 }
 
 #game {
-    order: 2;
     margin-top: 100px;
     height: 100vh;
     max-height: 700px;
@@ -64,7 +63,6 @@ body {
 }
 
 #stats {
-    order: 1; 
     position: relative;
     font-family: 'Satisfy';
     color: white;
@@ -188,11 +186,6 @@ body {
     
     .win-message h1 { 
         font-size: 2.5rem; 
-    }
-
-    #restart {
-        margin-top: 10px;
-        font-size: 1rem;
     }
 }
 
